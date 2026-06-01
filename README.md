@@ -1,0 +1,2 @@
+# spillavhengihet
+skjpivds yidsyg
