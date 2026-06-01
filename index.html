@@ -1,0 +1,135 @@
+```html
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gaming Balance AI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- START -->
+<section id="startScreen" class="screen">
+
+    <div class="card hero">
+
+        <div class="tag">🌿 Gaming Balance AI</div>
+
+        <h1>Spillvaner Test</h1>
+
+        <p>
+            Svar på spørsmålene og få en personlig AI-analyse av spillvanene dine.
+            Etterpå kan du fortsette å chatte med AI.
+        </p>
+
+        <button id="startBtn">Start test</button>
+
+    </div>
+
+</section>
+
+
+<!-- TEST -->
+<section id="testScreen" class="screen hidden">
+
+    <div class="card">
+
+        <h2>Spilltest</h2>
+
+        <div class="progressBar">
+            <div id="progressFill"></div>
+        </div>
+
+        <div class="question">
+            <p>1. Hvor ofte spiller du lenger enn planlagt?</p>
+            <label><input type="radio" name="q1" value="0"> Aldri</label>
+            <label><input type="radio" name="q1" value="1"> Noen ganger</label>
+            <label><input type="radio" name="q1" value="2"> Ofte</label>
+            <label><input type="radio" name="q1" value="3"> Veldig ofte</label>
+        </div>
+
+        <div class="question">
+            <p>2. Påvirker spilling søvn eller humør?</p>
+            <label><input type="radio" name="q2" value="0"> Aldri</label>
+            <label><input type="radio" name="q2" value="1"> Litt</label>
+            <label><input type="radio" name="q2" value="2"> Ofte</label>
+            <label><input type="radio" name="q2" value="3"> Veldig ofte</label>
+        </div>
+
+        <div class="question">
+            <p>3. Mister du tidsfølelse når du spiller?</p>
+            <label><input type="radio" name="q3" value="0"> Nei</label>
+            <label><input type="radio" name="q3" value="1"> Litt</label>
+            <label><input type="radio" name="q3" value="2"> Ofte</label>
+            <label><input type="radio" name="q3" value="3"> Hele tiden</label>
+        </div>
+
+        <div class="question">
+            <p>4. Går gaming foran ansvar?</p>
+            <label><input type="radio" name="q4" value="0"> Aldri</label>
+            <label><input type="radio" name="q4" value="1"> Litt</label>
+            <label><input type="radio" name="q4" value="2"> Ofte</label>
+            <label><input type="radio" name="q4" value="3"> Veldig ofte</label>
+        </div>
+
+        <div class="question">
+            <p>5. Har du prøvd å spille mindre uten å klare det?</p>
+            <label><input type="radio" name="q5" value="0"> Nei</label>
+            <label><input type="radio" name="q5" value="1"> Litt</label>
+            <label><input type="radio" name="q5" value="2"> Ja</label>
+            <label><input type="radio" name="q5" value="3"> Mange ganger</label>
+        </div>
+
+        <button id="finishBtn">Fullfør test</button>
+
+    </div>
+
+</section>
+
+
+<!-- RESULT -->
+<section id="resultScreen" class="screen hidden">
+
+    <div class="card">
+
+        <h2>AI Analyse</h2>
+
+        <div class="scoreBar">
+            <div id="scoreFill"></div>
+        </div>
+
+        <p id="scoreText"></p>
+
+        <div class="analysisBox">
+            <p id="analysis">AI analyserer...</p>
+        </div>
+
+        <h3>Snakk videre med AI</h3>
+
+        <div id="chatBox" class="chatBox"></div>
+
+        <div class="chatInput">
+
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="Skriv melding..."
+            >
+
+            <button id="sendBtn">Send</button>
+
+        </div>
+
+        <button id="restartBtn">Start på nytt</button>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+```
